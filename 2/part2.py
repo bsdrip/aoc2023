@@ -17,11 +17,6 @@ def parse(line):
     return {'id': int(_id), 'max_count': max_count}
 
 
-rules = {
-    'red': 12,
-    'green': 13,
-    'blue': 14
-}
 _input = open('input.txt').read().splitlines()
 parsed_lines = [parse(line) for line in _input]
 
